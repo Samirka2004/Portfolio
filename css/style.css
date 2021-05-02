@@ -1,0 +1,183 @@
+body {
+   font-family: 'New Tegomin', sans-serif;
+   font-size: 18px;
+   line-height: 27px;
+   font-weight: 300;
+   }
+   
+   a {
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+   }
+
+   .container {
+      max-width: 1220px;
+      margin:0 auto;
+      padding: 0 15px;
+      position: relative;
+      z-index: 20;
+   }
+   /*HEADER */
+   .header {
+      height: 100vh;
+      box-sizing: border-box;
+      background-image: url("../images/bg__header.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 1;
+      min-height: 700px;
+   }
+   .navigation {
+      padding: 46px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .header__logo {
+   width: 96px;
+   height: 60px;
+   font-family: Revalia;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 4   8px;
+   line-height: 60px;
+   text-align: center;
+   color: #34547A;
+   }
+   .menu__list {
+      text-transform: uppercase;
+      display: flex;
+      transition: all .3s;
+   }
+
+   .menu__list-item {
+      padding: 0 13px;
+   }
+
+   .menu__link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      margin-left: 15px;
+      position: relative;
+      color: #808080;
+      /*задаём цвет ссылки*/
+      cursor: pointer;
+      line-height: 1px;
+      transition: all .3s;
+      /*задаём высоту строки*/
+      text-decoration: none;
+   }
+   .menu__link--active {
+      color: red;
+   }
+   .menu__link:hover {
+      transition: .5s;
+      color: red;
+      position: relative;
+   }
+   .menu__link::after {
+      content: "";
+      display: block;
+      position: absolute;
+      margin-top: 5px;
+      top: 20px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #fff;
+      transition: 0.5s ;
+   }
+
+   .menu__link:hover::after {
+      max-width: 200px;
+      width: 100%;
+   }
+   .phone {
+      padding-left: 30px;
+      font-size: 25px;
+      font-weight: bold;
+      transition: all .5s;
+      color: #ffffff;
+   }
+   .phone:hover {
+      color: blue;
+   }
+
+   .header__content {
+      padding: 216px 0 0 0;
+      max-width: 689px;
+   }
+   
+
+   .header__title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 70px;
+      line-height: 59px;
+      color: #000;
+      margin: 0 0 35px 0;
+      color: #fff;
+      text-shadow: 1px 1px 1px white, 0 0 3px white;
+   }
+   .overlay {
+      background-color:rgba(32, 29, 31, 0.3);
+      height:100%;
+      position:fixed;
+      width:100%;
+      top:0;
+      left:0;
+   }
+
+   .header__text {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight:initial;
+      font-size: 22px;
+      line-height: 28px;
+      text-align: left;
+      color: #f0f0f0;
+      margin-bottom: 38px;
+      margin-top: 30px;
+   }
+   
+
+   .header__subtitle{
+      font-family:"Roboto";
+      text-align-last: left;
+      color: red;
+      font-size: 70px;
+      text-shadow: 1px 1px 2px red, 0 0 1em red;
+   }
+   .header__content-block {
+      position: relative;
+      z-index: -1;
+      max-width: 750px;
+      height: auto;
+      background-color: #fff;
+      opacity: .6;
+   }
+.button {
+background: linear-gradient(180deg, #FDDE76 0%, #FFBB01 100%);
+box-shadow: 0px 4px 0px #B68500;
+border-radius: 5px 5px 10px 10px;
+border: 0;
+font-style: normal;
+text-align: center;
+padding: 14px 54px 15px;
+line-height: 21px;
+font-weight: bold;
+font-size: 15px;
+text-transform: uppercase;
+transition: .5s;
+color: #000;
+}
+
+.button:hover {
+   background: linear-gradient(180deg, #dab439 100%, #FFBB01 0%);
+}
