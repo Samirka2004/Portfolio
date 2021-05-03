@@ -3,6 +3,7 @@ body {
    font-size: 18px;
    line-height: 27px;
    font-weight: 300;
+   background-color:#0e0e0e;
    }
    
    a {
@@ -18,9 +19,24 @@ body {
       position: relative;
       z-index: 20;
    }
+   .subtitle {
+      font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+   }
+   .title {
+      font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 42px;
+   color: #ffffff;
+   }
    /*HEADER */
    .header {
-      height: 100vh;
+      position: relative;
       box-sizing: border-box;
       background-image: url("../images/bg__header.jpg");
       background-repeat: no-repeat;
@@ -29,7 +45,7 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       opacity: 1;
-      min-height: 700px;
+      min-height: 900px;
    }
    .navigation {
       padding: 46px 0 0 0;
@@ -105,7 +121,7 @@ body {
       color: #ffffff;
    }
    .phone:hover {
-      color: blue;
+      color:#FFBB01;
    }
 
    .header__content {
@@ -164,7 +180,7 @@ body {
    }
 .button {
 background: linear-gradient(180deg, #FDDE76 0%, #FFBB01 100%);
-box-shadow: 0px 4px 0px #B68500;
+box-shadow: 0px 4px 4px #B68500;
 border-radius: 5px 5px 10px 10px;
 border: 0;
 font-style: normal;
@@ -180,4 +196,171 @@ color: #000;
 
 .button:hover {
    background: linear-gradient(180deg, #dab439 100%, #FFBB01 0%);
+}
+
+
+/* ABOUT ME */
+.about__column {
+   
+   height: 205px;
+   color: #f0f0f0;
+}
+.about__main-title {
+   padding: 64px 0 84px 0;
+   font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+color: #ffffff;
+}
+
+.about__column-img {
+   padding: 0 0 24px 0;
+}
+.about__subtitle {
+   padding: 0 0 16px 0;
+}
+
+.about__text {
+   font-family: Roboto;
+   max-width: 288px;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+color: #ffffff;
+}
+.about__main {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 63px 0;
+   margin-top: 84px;
+   margin-bottom: 120px;
+}
+
+.project__title {
+   padding-bottom: 90px;
+   display: block;
+   text-align: center;
+}
+
+.project {
+   width: 100%;
+   padding-top: 92px;
+   background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
+}
+
+.heroes__name {
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 50px;
+   text-align: center;
+}
+
+.slick-btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   border: none;
+   background-color: transparent;
+   z-index: 5;
+   cursor: pointer;
+   outline: none;
+
+}
+.slick-prev {
+   left: -5%;
+   top: 35%;
+}
+
+.slick-next { 
+   top: 35%;
+   right: -5%;
+}
+
+
+.copy {
+   padding: 14px 0 15px;
+   text-align: center;
+}
+.container-project {
+   position: relative;
+   max-width: 1420px;
+   margin:0 auto;
+   padding: 0 20px;
+   z-index: 20;
+}
+.heroes__images {
+border-radius: 10px;
+max-width: 100%;
+}
+.carousel {
+   background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
+}
+
+.carousel__inner {
+   margin: 0 -7px;
+}
+
+.carousel__item {
+   margin: 0 7px;
+}
+
+.carousel__item-box {
+   border: 1px solid #000;
+   box-shadow: 2px 2px 2px #000;
+   padding: 6px 6px 16px 6px;
+   margin: 0 7px;
+   text-align: center;
+   transition: all .5s;
+}
+.carousel__item-box:hover {
+   color: #fff;
+   background-color: #FFBB01;
+   border-color: #5A0D67;
+}
+
+.carousel__item-img {
+   border: none;
+   max-width: 100%;
+   margin-bottom: 23px;
+   opacity: .8;
+}
+
+.carousel__item-title {
+   font-weight: 300;
+   margin-bottom: 5px;
+   color: #fff;
+   font-weight: bold;
+}
+
+.carousel .slick-dots {
+display: flex;
+justify-content: center;
+list-style: none;
+margin-top: 50px;
+}
+
+.carousel .slick-dots button {
+font-size: 0;
+border: none;
+padding: 0;
+margin: 0 10px;
+background-color: #c4c4c4;
+width: 50px;
+height: 1px;
+}
+
+.carousel .slick-active button {
+background-color: #5A0D67;
+height: 3px;
+}
+
+.carousel__title {
+   margin-bottom: 100px;
+   text-align: center;
+   font-weight: bold;   
 }
