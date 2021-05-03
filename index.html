@@ -19,13 +19,14 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="animation.css">
 </head>
 
 <body>
-  <header id='header' class='header'>
+  <header class='header'>
     <div class="overlay"></div>
     <div class="container">
-      <div class="header__top">
+      <div id='header__top' class="header__top">
         <div class="navigation">
           <nav class='menu'>
             <ul class="menu__list">
@@ -45,12 +46,11 @@
           </div>
         </div>
       </div>
-      <div class="header__content">
-        .
-        <h2 class='header__title'>Меня зовут Самир</h2>
-        <h3 class='header__subtitle'>Web Development</h3>
+      <div class="header__content _anim-items">
+        <h2 class='header__title _anim-items _anim_no-hide'>Меня зовут Самир</h2>
+        <h3 class='header__subtitle _anim-items'>Web Development</h3>
         <div class="header__main-text">
-          <p class='header__text'>Верстаю 2 месяца, живу в Москве, стремлюсь к лучшему в этой
+          <p class='header__text _anim-items'>Верстаю 2 месяца, живу в Москве, стремлюсь к лучшему в этой
             жизне, начал разрабатывать сайты для людей. В дальнейшем хочу разрабатывать крупные сайты
           </p>
         </div>
@@ -58,33 +58,34 @@
       </div>
     </div>
   </header>
+
   <section class="about">
     <div class="container">
-      <h3 class='about__main-title'>Со мной удобно работать</h3>
+      <h3 class='about__main-title _anim-items'>Со мной удобно работать</h3>
       <div class="about__main">
-        <div class="about__column">
-          <div class="about__column-img">
-            <img src="./images/1.svg" alt="">
+        <div class="about__column _anim-items">
+          <div class="about__column-img _anim-items">
+            <img class='about__img' src="./images/1.svg" alt="">
           </div>
-          <div class="about__column-text">
+          <div class="about__column-text _anim-items">
             <h4 class='about__subtitle subtitle'>По договору</h4>
             <p class='about__text'>Предоставлю все документы для бухгалтерии: договоры, счета и акты. Работаю как ИП без
               НДС.</p>
           </div>
         </div>
-        <div class="about__column">
+        <div class="about__column _anim-items">
           <div class="about__column-img">
-            <img src="./images/2.svg" alt="">
+            <img class='about__img' src="./images/2.svg" alt="">
           </div>
-          <div class="about__column-text">
+          <div class="about__column-text" >
             <h4 class='about__subtitle subtitle'>Точно в срок</h4>
             <p class='about__text'>В договоре прописана моя ответственность за срок проекта. Если просрочу — плачу
               неустойку. </p>
           </div>
         </div>
-        <div class="about__column">
+        <div class="about__column _anim-items">
           <div class="about__column-img">
-            <img src="./images/3.svg" alt="">
+            <img class='about__img' src="./images/3.svg" alt="">
           </div>
           <div class="about__column-text">
             <h4 class='about__subtitle subtitle'>Ценник под вас</h4>
@@ -92,18 +93,18 @@
               складывается цена.</p>
           </div>
         </div>
-        <div class="about__column">
-          <div class="about__column-img">
-            <img src="./images/4.svg" alt="">
+        <div class="about__column _anim-items">
+          <div class="about__column-img _anim-items">
+            <img class='about__img' src="./images/4.svg" alt="">
           </div>
-          <div class="about__column-text">
+          <div class="about__column-text _anim-items">
             <h4 class='about__subtitle subtitle'>Премежуточные итоги</h4>
             <p class='about__text'>Показываю работу поэтапно, а не в последий момент перед крайним сроком. </p>
           </div>
         </div>
-        <div class="about__column">
+        <div class="about__column _anim-items">
           <div class="about__column-img">
-            <img src="./images/5.svg" alt="">
+            <img class='about__img' src="./images/5.svg" alt="">
           </div>
           <div class="about__column-text">
             <h4 class='about__subtitle subtitle'>Хостинг и домен </h4>
@@ -111,9 +112,9 @@
               сертификат.</p>
           </div>
         </div>
-        <div class="about__column">
+        <div class="about__column _anim-items">
           <div class="about__column-img">
-            <img src="./images/6.svg" alt="">
+            <img class='about__img' src="./images/6.svg" alt="">
           </div>
           <div class="about__column-text">
             <h4 class='about__subtitle subtitle'>Не брошу после сдачи</h4>
