@@ -12,6 +12,7 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://kit.fontawesome.com/68e74f9a8d.js" crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=New+Tegomin&family=Roboto:wght@500&display=swap"
     rel="stylesheet">
@@ -34,10 +35,13 @@
                 <a class='menu__link menu__link--active' href="#">Главная</a>
               </li>
               <li class='menu__list-item'>
-                <a class='menu__link' href="#">Обо мне</a>
+                <a class='menu__link' href="#work">Работаю</a>
               </li>
               <li class='menu__list-item'>
-                <a class='menu__link' href="#">Проекты</a>
+                <a class='menu__link' href="#projects">Проекты</a>
+              </li>
+              <li class='menu__list-item'>
+                <a class='menu__link' href="#price">Прайс</a>
               </li>
             </ul>
           </nav>
@@ -52,14 +56,15 @@
         <div class="header__main-text">
           <p class='header__text _anim-items'>Верстаю 2 месяца, живу в Москве, стремлюсь к лучшему в этой
             жизне, начал разрабатывать сайты для людей. В дальнейшем хочу разрабатывать крупные сайты
+
           </p>
         </div>
-        <a class="button" href="#">Напиши мне</a>
+        <a class="button _anim-items" href="#contacts">Связаться со мной</a>
       </div>
     </div>
   </header>
 
-  <section class="about">
+  <section id='work' class="about">
     <div class="container">
       <h3 class='about__main-title _anim-items'>Со мной удобно работать</h3>
       <div class="about__main">
@@ -77,7 +82,7 @@
           <div class="about__column-img">
             <img class='about__img' src="./images/2.svg" alt="">
           </div>
-          <div class="about__column-text" >
+          <div class="about__column-text">
             <h4 class='about__subtitle subtitle'>Точно в срок</h4>
             <p class='about__text'>В договоре прописана моя ответственность за срок проекта. Если просрочу — плачу
               неустойку. </p>
@@ -125,7 +130,7 @@
     </div>
   </section>
 
-  <section class="carousel">
+  <section id='projects' class="carousel">
     <div class="container">
       <h2 class="carousel__title title">
         Примеры моих робот
@@ -156,12 +161,63 @@
           </div>
         </div>
       </div>
-      <br><br><br><br><br>
     </div>
   </section>
 
+  <section id ='price' class='price'>
+    <div class="overlay"></div>
+    <div class="wraper">
+      <div class="container">
+        <h5 class='price__title title _anim-items'>Адаптивная верстка под все устройства <br> и браузеры от 4000 рублей.*</h5>
+        <p class='price__subtitle _anim-items'>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,<br>
+          в
+          зависимости от сложности задач.
+        </p>
+        <div class="price__img _anim-items">
+          <img style="max-width:250px; width:100%"  src="./images/ordinateur.png" alt="">
+          <img class='price__phone-img' style="max-width:200px; width:100%" src="./images/smartphone.png" alt="">
+          <img style="max-width:300px; width:100%" src="./images/computer.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
-
+<footer>
+    <div class="container">
+      <div class="footer__menu">
+        <nav class="footer-menu-list">
+          <ul>
+            <li><a href = '#'>Услуги</a></li>
+            <li><a href = '#'>Проекты</a></li>
+            <li><a href = '#'>Прайс</a></li>
+          </ul>
+        </nav>
+        <div class="footer-menu-contacts">
+          <ul>
+            <li><a class='footer__number' href='tel:+7(985)-729-05-66'><i style='margin-right: 10px;' class='fa fa-phone' aria-hidden='true'></i>+7(985)-729-05-66</a></li>
+            <li><a class='footer__email' href = 'sem.kurbatov.00@inbox.ru'><i style='margin-right: 10px;' class='fa fa-envelope' aria-hidden='true'></i>sem.kurbatov.00@inbox.ru</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu-social">
+          <ul class='social'>
+            <li>
+              <a href ='#'><img src="./images/github.svg" alt=""></a>
+            </li>
+            <li>
+              <a href ='#'><img src="./images/facebook.svg" alt=""></a>
+            </li>
+            <li>
+              <a href ='#'><img src="./images/twitter.svg" alt=""></a>
+            </li>
+            <li>
+              <a href ='#'><img src="./images/instagram.svg" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="author">©Samir-Dev</div>
+  </footer>
 
 
 

@@ -45,7 +45,7 @@ if (animItems.length > 0) {
          if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
             animItem.classList.add('_active');
          } else {
-            if(!animItem.classList.contains('_anim-no-hide')) {
+            if (!animItem.classList.contains('_anim-no-hide')) {
             }
          }
       }
@@ -61,3 +61,10 @@ if (animItems.length > 0) {
    }, 100);
 
 }
+$('a[href*="#"]').on('click', function (e) {
+   e.preventDefault();
+
+   $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+   }, 1500, '');
+});
