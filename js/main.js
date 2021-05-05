@@ -68,3 +68,10 @@ $('a[href*="#"]').on('click', function (e) {
       scrollTop: $($(this).attr('href')).offset().top
    }, 1500, '');
 });
+
+$(document).ready(function(){
+   $('.header__burger').click(function(event) {
+      $('.header__burger, .menu').toggleClass('activeted');
+      $('body').toggleClass('lock');
+   });
+});
