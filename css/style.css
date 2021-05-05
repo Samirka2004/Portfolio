@@ -73,8 +73,8 @@ line-height: 28px;
       display: flex;
       transition: all .3s;
       opacity: 0;
-      transform: translateY(0,130%);
-      transition: all 1s ease 1.2s;
+      transform: translateY(0,10%);
+      transition: all 1s ease 0s;
    }
    .menu__list._active {
       opacity: 1;
@@ -133,14 +133,14 @@ line-height: 28px;
       transition: all .5s;
       color: #ffffff;
       opacity: 0;
-      transform: translateY(0,130%);
-      transition: all 1s ease 1.2s;
+      transform: translateY(0,10%);
+      transition: all 1s ease 0s;
    }
    
    .phone._active {
       opacity: 1;
       transform: translateY(0);
-      transition: all 1s ease 1.2s;
+      transition: all 1s ease 1s;
    }
    .phone:hover {
       color:#FFBB01;
@@ -211,7 +211,7 @@ line-height: 28px;
       color: #f0f0f0;
       margin-bottom: 38px;
       margin-top: 30px;
-      transform: translate(0,120%);
+      transform: translate(0,10%);
       opacity: 0;
       transition: all 0.8s ease 0s;
    }
@@ -272,7 +272,7 @@ font-size: 36px;
 line-height: 42px;
 color: #ffffff;
 opacity: 0;
-transform: translate(0px,50%);
+transform: translate(0px,10%);
 transition: all 0.6s ease 0s;
 }
 .about__main-title._active {
@@ -671,15 +671,8 @@ line-height: 28px;
       width: 30px;
       height: 20px;
       z-index: 6;
+      top: 0;
       left: 0;
-      opacity: 0;
-      transform: translate(0,20%);
-      transition: all 1s ease 1.2s;
-   }
-   .header__burger._active {
-      opacity: 1;
-      transform: translate(0);
-      transition: all 1s ease 1.2s;
    }
    .header__burger .header__burger-span {
       position: absolute;
@@ -758,8 +751,9 @@ line-height: 28px;
       display: block;
       position: relative;
       z-index: 20;
-      margin-top: 100px;
-      margin-right: 100px;
+      margin-top: 115px;
+      opacity: 1;
+      margin-right: 60px;
    }
    .menu__list li {
       position: relative;
