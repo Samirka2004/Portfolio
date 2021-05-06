@@ -807,8 +807,20 @@ height: 3px;
 }
 
 @media (max-width:470px) {
-   .wraper {
+   .carousel__inner{
+      padding: 0;
+   }
+   .carousel {
       height: 50vh;
+      min-height: 600px;
+      margin-top: 200px;
+      background: linear-gradient(180deg, #0e0e0e, #012579 95.44%);
+   }
+   .price__main {
+      text-align: center;
+      padding:0;
+   }
+   .wraper {
       min-height: 600px;
    }
    .header {
@@ -905,7 +917,7 @@ height: 3px;
    opacity:0.5;
    position:fixed;
    bottom:50px;
-   right:5%;
+   right:1%;
    color: #fff;
 }
 
