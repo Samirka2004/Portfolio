@@ -349,11 +349,11 @@ color: #ffffff;
 }
 .slick-prev {
    left: 0%;
-   top: 35%;
+   top: 55%;
 }
 
 .slick-next { 
-   top: 35%;
+   top: 55%;
    right: 0%;
 }
 
@@ -381,7 +381,7 @@ border-radius: 10px;
 
 .carousel__inner {
    margin: 0 -7px;
-   padding: 150px 0 120px 0;
+   padding: 240px 0 120px 0;
 }
 
 .carousel__item {
@@ -500,7 +500,7 @@ height: 3px;
 }
 .price__main {
    text-align: center;
-   padding-top: 200px;
+   padding: 200px 0;
 }
 .price__subtitle._active {
    opacity: 1;
