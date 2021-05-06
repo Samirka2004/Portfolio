@@ -10,16 +10,20 @@ $(function () {
       autoplay: true,
       autoplaySpeed: 3000,
       responsive: [
-         {
+            {
             breakpoint: 841,
             settings: {
-               slidesToShow: 2
+               slidesToShow: 2,
+               arrows:false,
+               dots:true,
             }
-         },
+            },
          {
             breakpoint: 601,
             settings: {
-               slidesToShow: 1
+               slidesToShow: 1,
+               arrows:false,
+               dots:true,  
             }
          },
       ]
