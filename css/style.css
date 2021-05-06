@@ -322,6 +322,7 @@ color: #ffffff;
 
 .project {
    width: 100%;
+   height: 50vh;
    padding-top: 92px;
    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
 }
@@ -372,13 +373,15 @@ color: #ffffff;
 border-radius: 10px;
 }
 .carousel {
+   height: 50vh;
+   min-height: 1000px;
    margin-top: 200px;
    background: linear-gradient(180deg, #0e0e0e, #012579 95.44%);
 }
 
 .carousel__inner {
    margin: 0 -7px;
-   padding: 0 0 120px 0;
+   padding: 150px 0 120px 0;
 }
 
 .carousel__item {
@@ -456,37 +459,6 @@ height: 3px;
 
 
 
-/* BIO(About me) */
-
-
-
-.bio {
-   background-color: #0e0e0e;
-}
-.bio__img img {
-   border-radius: 100%;
-   width: 447px;
-
-}
-.bio__title {
-   padding: 64px 0 84px 0;
-}
-.bio__main {
-   display: flex;
-   justify-content: space-between;
-   color: #ffffff;
-}
-.bio__text {
-   width: 600px;
-}
-.bio__text .text {
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 28px;
-}
-
 /* PRICE */
    
 
@@ -495,7 +467,7 @@ line-height: 28px;
    background-repeat: no-repeat;
    background-position: left;
    background-size: cover;
-   min-height: 700px;
+   min-height: 1000px;
    background-image: url("../images/1593663560_46-p-zadnii-fon-65.jpg");
    background-repeat: no-repeat;
    opacity: .9 ;
@@ -528,7 +500,7 @@ line-height: 28px;
 }
 .price__main {
    text-align: center;
-   margin-bottom: 40px;
+   padding-top: 200px;
 }
 .price__subtitle._active {
    opacity: 1;
@@ -756,7 +728,7 @@ line-height: 28px;
       align-items: center;
       margin-top: 30px;
       width: 100%;
-      height: 53%;
+      height: 55%;
       top: -100%;
       z-index: 4;
       background-color: rgba(0, 0, 0, 0.445);
@@ -835,6 +807,10 @@ line-height: 28px;
 }
 
 @media (max-width:470px) {
+   .wraper {
+      height: 50vh;
+      min-height: 600px;
+   }
    .header {
       height: 40vh;
       min-height: 750px;
@@ -918,5 +894,19 @@ line-height: 28px;
    .header__subtitle._active {
       font-size: 30px;
    }
+   .social {
+      justify-content: space-around;
+   }
 }
+
+.scrollup {
+   width:40px;
+   height:40px;
+   opacity:0.5;
+   position:fixed;
+   bottom:50px;
+   right:5%;
+   color: #fff;
+}
+
 
