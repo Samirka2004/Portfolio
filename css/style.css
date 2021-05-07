@@ -299,7 +299,6 @@ color: #ffffff;
    grid-template-columns: 1fr 1fr 1fr;
    grid-gap: 63px 0;
    margin-top: 84px;
-   margin-bottom: 120px;
 }
 .about__column {
    opacity: 0;
@@ -392,10 +391,10 @@ border-radius: 10px;
    border: 1px solid #0e0e0e;
    box-shadow: 2px 2px 2px rgba(124, 31, 31, 0.671) 95.44%;
    border-radius: 10px;
-
    margin: 0 7px;
    text-align: center;
    transition: all .5s;
+   height: 100%;
 }
 .carousel__item-box:hover {
    color: #fff;
@@ -411,6 +410,8 @@ border-radius: 10px;
    border-radius: 10px;
    border-bottom-left-radius: 0;
    border-bottom-right-radius:0 ;
+   top: 0;
+   left: 0;
 }
 
 .carousel__item-title {
@@ -449,10 +450,7 @@ height: 3px;
    font-weight: bold;   
 }
 .company {
-   margin-bottom: 0 0 8px 0;
-   padding: 0 0 16px 0;
-   object-fit: cover;
-   max-height: 280px;
+   max-height: 353px;
    height: 100%;
 }
 
